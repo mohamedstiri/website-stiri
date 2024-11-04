@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.stiri{
+   width: 120px; 
+   height: 100vh;
+   background: #7171ed92;
+   color: white;
+}
+.stiri p{
+    padding: 10px;
+}
+.stiri p:hover{
+    background: hsla(0, 59%, 65%, 0.708);
+    cursor: pointer;
+}
+button{
+    background: hsla(120, 77%, 55%, 0.664);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+button:hover{
+    background: rgba(0, 0, 0, 0.411);
+    color: rgba(255, 255, 255, 0.717);
+    cursor: pointer;
+}
+#close{
+    position: absolute;
+    left: 125px;
+}
+
+
+.hava{
+    display: none;
+}
+
