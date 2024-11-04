@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stirijs</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<div class="stiri">
+
+<div class="head">
+  <h1>digital</h1>
+  <p>product management system</p>
+</div>
+<div class="inputs">
+  <input placeholder="title" type="text" id="title">
+  <div class="price">
+    <input onkeyup="getTotal()"  type="number" id="price" placeholder="price">
+    <input onkeyup="getTotal()" type="number" id="tva" placeholder="tva">
+    <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+    <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+    <small id="total"></small>
+  </div>
+</div>
+<div class="inputs"> 
+  <input type="number" id="count" placeholder="count">
+  <input type="text" id="category" placeholder="category">
+  <button id="create">create</button>
+</div>
+ 
+   <div class="outputs">
+      <div class="search">
+        <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search">
+        <div class="btnsearch">
+          <button onclick="getsearch(this.id)" id="title"> serarch by title</button>
+          <button onclick="getsearch(this.id)" id="category">search by category</button>
+        </div> 
+      </div>
+      <div id="deleteall"></div>
+             <table> 
+              <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>tva</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+              </tr>
+              <tbody id="tbody">
+               
+            
+            </tbody>
+             </table>
+
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  <script src="stiri.js"></script>
+</body>
+</html>
